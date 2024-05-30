@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="images/bookmark.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/index.css" />
+  </head>
+  <body>
+    <header class="container d-flex align-items-center justify-content-center">
+      <h1>Bookmarker</h1>
+    </header>
+    <main class="container">
+      <div class="body-bookmark">
+        <div class="head">
+          <h2>
+            <span><i class="fa-solid fa-bookmark"></i></span>
+            Bookmark your favorite sites
+            <span><i class="fa-solid fa-bookmark"></i></span>
+          </h2>
+        </div>
+        <div class="input-bookmark">
+          <div class="input-1">
+            <label for="siteName"><span><i class="fa-solid fa-book-bookmark"></i></span> Site Name</label>
+            <input oninput="validSite(this)" id="siteName" type="text" placeholder="Bookmark Name" class="form-control w-100 p-2 rounded-2 ">
+          </div>
+          <div class="input-2 mt-4">
+            
+            <label for="websiteURL"><span><i class="fa-solid fa-link pe-2"></i></span>Site URL</label>
+            <input oninput="validSite(this)" id="websiteURL" type="url" placeholder="Website URL" class="form-control w-100 p-2 rounded-2">
+          </div>
+        </div>
+        <div class="submit text-center">
+          <button onclick="addBook()" id="btnAdd" type="button" class="btn btn-submit px-5 mt-5 ">Submit</button>
+        </div>
+      </div>
+      
+    </main>
+    <div class="container">
+      <table class="table mt-4 text-center">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableData">
+         
+        </tbody>
+      </table>
+    </div>
+    <div id="msgError" class="cover-screen d-flex justify-content-center align-items-center d-none ">
+      <div class="cotent-erro bg-white rounded-3 p-4">
+        <div class="circles d-flex mb-4 mt-2">
+          <div></div>
+          <div></div>
+          <div></div>
+          <button onclick="closeMsg()" class="btn border-0" ><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <h5>Site Name or Url is not valid, Please follow the rules below :</h5>
+        <ul class="ps-1 mt-3">
+          <li class="mb-3">
+            <span class="pe-1"><i class="fa-regular fa-circle-right"></i></span>
+            Site name must contain at least 3 characters
+          </li>
+          <li>
+            <span class="pe-1"><i class="fa-regular fa-circle-right"></i></span>
+            Site URL must be have Ex:"http(s)://"
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <script src="js/index.js"></script>
+  </body>
+</html>

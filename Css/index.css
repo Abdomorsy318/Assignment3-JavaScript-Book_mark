@@ -1,0 +1,155 @@
+body {
+  background-color: #f7ecde;
+  
+}
+::selection{
+  background: #FEC260;
+}
+
+header,
+main {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  position: relative;
+}
+.body-bookmark {
+  padding-block: 20px;
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+}
+
+header h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-size: 3.125rem;
+  line-height: 3.75rem;
+  color: rgb(53, 46, 40);
+  display: inline;
+  position: relative;
+}
+
+header h1::after {
+  content: "";
+  height: 20px;
+  width: 102%;
+  background-color: #fec260;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+header h1:hover::after {
+  height: 60%;
+}
+/* ----------------------- */
+.head h2 {
+  font-family: "Righteous", sans-serif;
+  font-weight: 500;
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
+  text-align: center;
+  background-image: linear-gradient(to right, #3ea55b, #b3ac49);
+  background-clip: text;
+  color: transparent;
+}
+
+.input-bookmark {
+  margin-top: 2rem;
+}
+.input-bookmark label {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(33, 37, 41);
+}
+input {
+  border: 1px solid #ced4da;
+}
+.form-control:focus {
+  outline: #ffa500;
+  border: 1px solid #ffa500;
+  box-shadow: 0 0 5px #ffa500;
+}
+.btn-submit {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #d1512d;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #bb4120;
+}
+/* ------------- */
+
+.btn-visit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #9eb23b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8a9e23;
+}
+.btn-delete {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #eb1d36;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d30820;
+}
+
+.cover-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cotent-erro {
+  width: 500px;
+}
+
+.circles div {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top: .625rem;
+}
+.circles button {
+  margin-left: auto;
+  font-size: 1.5rem;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+
+}
+.circles div:nth-child(1) {
+  background-color: #f15f5d;
+}
+.circles div:nth-child(2) {
+  background-color: #febe2e;
+}
+.circles div:nth-child(3) {
+  background-color: #4db748;
+}
+
+ul {
+  list-style: none;
+}
+
+li span {
+  color: #bb4120;
+}
+.cotent-erro h5 {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6875rem;
+  color: rgb(53, 46, 40);
+}
+
+li{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    color: rgb(33, 37, 41);
+}
