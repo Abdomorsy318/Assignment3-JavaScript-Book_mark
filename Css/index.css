@@ -31,7 +31,7 @@ header h1 {
 header h1::after {
   content: "";
   height: 20px;
-  width: 102%;
+  width: 100%;
   background-color: #fec260;
   position: absolute;
   bottom: 0;
